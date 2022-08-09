@@ -13,3 +13,11 @@ fromEvent(document, 'click')
 
     document.body.append(redDot);
   });
+
+// TODO: Create Listener for add new Info to array (onKeyPress = Enter && onClick on button);
+
+// TODO: Create Subject and Observe it to dynamic generate a TODO list;
+
+// TODO: Create Debounce for temporary card;
+
+// TODO: Erase elements from the list;
