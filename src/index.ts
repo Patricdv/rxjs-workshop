@@ -1,6 +1,6 @@
-import { fromEvent } from 'rxjs';
+import { fromEvent } from "rxjs";
 
-fromEvent(document, 'click')
+fromEvent(document, "click")
   .subscribe((event: PointerEvent) => {
     const redDot = document.createElement("div");
     redDot.style.position = "absolute";
