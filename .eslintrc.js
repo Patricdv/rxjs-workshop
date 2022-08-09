@@ -13,33 +13,36 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
-    node: true,
-  },
-  globals: {
-    Html5ConvivaIntegration: false,
-    Html5ConvivaCredentials: false,
-    SentryDsnCredentials: false,
-    TimeoutID: false
+    node: true
   },
   rules: {
+    'no-unused-vars': 'off',
+    'no-undef': 'off',
+    'no-use-before-define': 'off',
+    'no-shadow': 'off',
+    'no-useless-constructor': 'off',
+    'prettier/prettier': [
+      'error',
+      {
+        bracketSameLine: false,
+        bracketSpacing: true,
+        parser: 'typescript',
+        printWidth: 120,
+        semi: true,
+        singleQuote: true,
+        tabWidth: 2,
+        trailingComma: 'es5',
+        useTabs: false,
+      },
+    ],
     strict: 'off',
     'no-console': 'off',
     'consistent-this': 'warn',
     'arrow-parens': ['error', 'as-needed'],
-    'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error', { functions: false }],
     'comma-dangle': ['error', 'never'],
     'import/no-extraneous-dependencies': 'off',
     'import/named': 'off',
-    'prettier/prettier': [
-      'error',
-      {
-        trailingComma: 'none',
-        singleQuote: true,
-        printWidth: 120,
-        arrowParens: 'avoid'
-      }
-    ],
     '@typescript-eslint/no-unused-vars': 'off',
     'unused-imports/no-unused-imports': 'error',
     'unused-imports/no-unused-vars': [
