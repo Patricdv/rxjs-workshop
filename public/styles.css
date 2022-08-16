@@ -17,6 +17,8 @@ header {
   align-items: center;
   justify-content: space-between;
   border-bottom: solid 1px #525252;
+  background: #3a3a3a;
+  z-index: 10;
 }
 
 header input {
@@ -53,12 +55,25 @@ main {
 main .card {
   margin-bottom: 4px;
   width: 100%;
-  padding: 10px;
+  padding: 16px;
+  border-radius: 3px;
+  background: #a3a3a3;
   font-size: 16px;
   color: #3e3e3e;
 }
 
-main .temporary-card {
+main #temporary-card {
+  display: none;
+  margin-bottom: 4px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 3px;
+  font-size: 16px;
   background: #eee;
   color: #8e8e8e;
 }
+
+main #temporary-card.show {
+  display: block;
+}
+
