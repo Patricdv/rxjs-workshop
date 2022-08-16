@@ -59,5 +59,3 @@ temporaryTodo$.subscribe((temporary: string) => {
   }
   temporaryCard.className = "";
 });
-
-// TODO: Erase elements from the list;
