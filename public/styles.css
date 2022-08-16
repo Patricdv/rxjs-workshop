@@ -1,6 +1,6 @@
 body {
   font-family: 'Arial';
-  background: white;
+  background: #3a3a3a;
 }
 
 * {
@@ -16,29 +16,31 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: solid 1px #ddd;
+  border-bottom: solid 1px #525252;
 }
 
 header input {
   display: block;
-  border: solid 1px #ddd;
-  color: #3e3e3e;
+  background: #525252;
+  border: none;
+  color: white;
   line-height: 2;
-  font-size: 24px;
-  padding: 0 10px;
+  font-size: 18px;
+  padding: 4px 10px;
   border-radius: 5px;
   width: 80%;
 }
 
 header button {
-  background-color: #267ba6;
+  background-color: #13a3ec;
   border: none;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 2;
+  padding: 4px 10px;
   border-radius: 5px;
   margin: 0;
   color: white;
-  width: 200px;
+  width: 150px;
 }
 
 main {
